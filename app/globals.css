@@ -252,9 +252,56 @@ section[id] {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1.02fr 0.98fr;
+  grid-template-columns: 0.94fr 1.06fr;
   align-items: center;
   gap: clamp(50px, 7vw, 92px);
+}
+
+.hero-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 168px;
+  align-items: end;
+  gap: 14px;
+}
+
+.hero-portrait-card {
+  position: relative;
+  z-index: 3;
+  margin: 0 0 -24px;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 8px 8px 0 var(--orange);
+  transform: rotate(-1.2deg);
+}
+
+.hero-portrait-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 18%;
+  filter: saturate(0.9) contrast(1.02);
+}
+
+.hero-portrait-card figcaption {
+  display: grid;
+  gap: 1px;
+  border-top: 2px solid var(--ink);
+  background: var(--white);
+  padding: 10px 11px;
+  line-height: 1.25;
+}
+
+.hero-portrait-card figcaption strong {
+  font-size: 0.76rem;
+  letter-spacing: -0.01em;
+}
+
+.hero-portrait-card figcaption span {
+  color: var(--blue);
+  font-size: 0.56rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .status-pill {
@@ -1305,6 +1352,11 @@ footer {
     max-width: 850px;
   }
 
+  .hero-visual {
+    grid-template-columns: minmax(0, 1fr) 190px;
+    max-width: 980px;
+  }
+
   .delivery-board {
     max-width: 820px;
   }
@@ -1389,6 +1441,17 @@ footer {
 
   .mobile-navigation a:last-child {
     border-bottom: 0;
+  }
+
+  .hero-visual {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .hero-portrait-card {
+    width: min(250px, 62vw);
+    justify-self: end;
+    margin: -34px 14px 0 0;
   }
 
   .section {

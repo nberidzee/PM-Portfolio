@@ -197,36 +197,46 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="delivery-board" data-reveal>
-              <div className="board-header">
-                <div>
-                  <span className="board-kicker">DELIVERY BOARD</span>
-                  <h2>Complex work → clear system</h2>
+            <div className="hero-visual" data-reveal>
+              <div className="delivery-board">
+                <div className="board-header">
+                  <div>
+                    <span className="board-kicker">DELIVERY BOARD</span>
+                    <h2>Complex work → clear system</h2>
+                  </div>
+                  <span className="on-track"><i /> ON TRACK</span>
                 </div>
-                <span className="on-track"><i /> ON TRACK</span>
+
+                <div className="milestone-row">
+                  <div className="milestone done"><span>01</span><strong>Define</strong><small>DONE</small></div>
+                  <div className="milestone done"><span>02</span><strong>Align</strong><small>DONE</small></div>
+                  <div className="milestone active"><span>03</span><strong>Deliver</strong><small>ACTIVE</small></div>
+                  <div className="milestone"><span>04</span><strong>Improve</strong><small>NEXT</small></div>
+                </div>
+
+                <div className="timeline-board" aria-label="Illustrative project timeline">
+                  <div className="timeline-head"><span>WORKSTREAM</span><span>W1</span><span>W2</span><span>W3</span><span>W4</span></div>
+                  <div className="timeline-row"><strong>Discovery</strong><i className="bar bar-discovery" /></div>
+                  <div className="timeline-row"><strong>Scope</strong><i className="bar bar-scope" /></div>
+                  <div className="timeline-row"><strong>Delivery</strong><i className="bar bar-delivery" /></div>
+                  <div className="timeline-row"><strong>Feedback</strong><i className="bar bar-feedback" /></div>
+                </div>
+
+                <div className="board-footer">
+                  <div><span>SCOPE</span><strong>Clear</strong></div>
+                  <div><span>OWNERS</span><strong>Named</strong></div>
+                  <div><span>RISKS</span><strong>Visible</strong></div>
+                  <div><span>NEXT STEP</span><strong>Actionable</strong></div>
+                </div>
               </div>
 
-              <div className="milestone-row">
-                <div className="milestone done"><span>01</span><strong>Define</strong><small>DONE</small></div>
-                <div className="milestone done"><span>02</span><strong>Align</strong><small>DONE</small></div>
-                <div className="milestone active"><span>03</span><strong>Deliver</strong><small>ACTIVE</small></div>
-                <div className="milestone"><span>04</span><strong>Improve</strong><small>NEXT</small></div>
-              </div>
-
-              <div className="timeline-board" aria-label="Illustrative project timeline">
-                <div className="timeline-head"><span>WORKSTREAM</span><span>W1</span><span>W2</span><span>W3</span><span>W4</span></div>
-                <div className="timeline-row"><strong>Discovery</strong><i className="bar bar-discovery" /></div>
-                <div className="timeline-row"><strong>Scope</strong><i className="bar bar-scope" /></div>
-                <div className="timeline-row"><strong>Delivery</strong><i className="bar bar-delivery" /></div>
-                <div className="timeline-row"><strong>Feedback</strong><i className="bar bar-feedback" /></div>
-              </div>
-
-              <div className="board-footer">
-                <div><span>SCOPE</span><strong>Clear</strong></div>
-                <div><span>OWNERS</span><strong>Named</strong></div>
-                <div><span>RISKS</span><strong>Visible</strong></div>
-                <div><span>NEXT STEP</span><strong>Actionable</strong></div>
-              </div>
+              <figure className="hero-portrait-card">
+                <img src="./noe-portrait.webp" alt="Noe Beridze, Project Manager" />
+                <figcaption>
+                  <strong>Noe Beridze</strong>
+                  <span>Project Manager</span>
+                </figcaption>
+              </figure>
             </div>
           </div>
 
